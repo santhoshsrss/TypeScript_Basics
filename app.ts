@@ -20,3 +20,12 @@ console.log(comAges);
 
 const comName = combine('Santhosh', ' Sakthivel')
 console.log(comName.toUpperCase());
+
+function mul(a1: number, a2: number) {
+    return a1 * a2;
+}
+
+function printResult(num: number) {
+   console.log('result: ' + num);
+}
+printResult(mul(5, 6));

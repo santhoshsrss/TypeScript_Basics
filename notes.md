@@ -29,7 +29,15 @@ Any type: *
     Any kind of value, no specific type assignment. 
 
 Union type: input1: number | string
-     Used to combine two datatypes.
+     Used to combine two datatype.
 
 Type aliases/ custom type : type combinable = number | string;
     It can be used to Create your own type. 
+
+Void: function printResult(num: number) 
+        {
+            console.log('result: ' + num); 
+        }
+    It means this function does not have a return type.
+
+Function as Type: 
