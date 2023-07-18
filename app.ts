@@ -29,3 +29,35 @@ function printResult(num: number) {
    console.log('result: ' + num);
 }
 printResult(mul(5, 6));
+
+//* Function Type
+let fun: (x: number, y: number) => number;
+fun = mul;
+console.log(fun(3, 9))
+
+//* FUNCTION TYPE AND CALLBACK
+
+function addHandle(m1: number, m2: number, cb: (num: number) => void){
+    const handleResult = m1 + m2;
+    cb(handleResult)
+}
+
+addHandle(10, 20, (handleResult) => {
+    console.log(handleResult);
+})
+
+
+//* unknown type
+
+let userInput: unknown;
+let userName: unknown;
+
+userInput = 6;
+userName = 'santhosh';
+
+//* NEVER TYPE
+
+function handleError(message: string, code: number): never{
+    throw{message: message, errorCode: code};
+}
+handleError('Error in the Page', 600)

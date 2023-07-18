@@ -41,3 +41,13 @@ Void: function printResult(num: number)
     It means this function does not have a return type.
 
 Function as Type: 
+    let fun: (x: number, y: number) => number;
+    fun = mul;
+    console.log(fun(3, 9))
+
+Unknown Type: 
+    let userInput: unknown;
+    let userName: unknown;
+    userInput = 6;
+    userName = 'santhosh';
+
